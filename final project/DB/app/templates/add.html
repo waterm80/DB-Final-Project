@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>新增建案</title>
+</head>
+
+<body>
+    <form method="POST" action="{{ url_for('add') }}">
+        {{ form.hidden_tag() }}
+        <p>{{ form.name.label }} {{ form.name }}</p>
+        <p>{{ form.address.label }} {{ form.address }}</p>
+        <p>{{ form.land_area.label }} {{ form.land_area }}</p>
+        <p>{{ form.floor_no.label }} {{ form.floor_no }}</p>
+        <p>{{ form.floor_total.label }} {{ form.floor_total }}</p>
+        <p>{{ form.type.label }} {{ form.type }}</p>
+        <p>{{ form.total_area.label }} {{ form.total_area }}</p>
+        <p>{{ form.room.label }} {{ form.room }}</p>
+        <p>{{ form.parlor.label }} {{ form.parlor }}</p>
+        <p>{{ form.bath.label }} {{ form.bath }}</p>
+        <p>{{ form.total_price.label }} {{ form.total_price }}</p>
+        <p>{{ form.price_per.label }} {{ form.price_per }}</p>
+        <p>{{ form.parking_space_area.label }} {{ form.parking_space_area }}</p>
+        <p>{{ form.parking_space_price.label }} {{ form.parking_space_price }}</p>
+        <p>{{ form.balcony_area.label }} {{ form.balcony_area }}</p>
+        <p>{{ form.elevator.label }} {{ form.elevator }}</p>
+        <p>{{ form.submit.label }} {{ form.submit }}</p>
+    </form>
+</body>
+
+</html>

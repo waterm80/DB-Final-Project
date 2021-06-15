@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>查詢結果</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="55%" border="1" align="center">
+        <thead bgcolor="yellow">
+            <th>學校</th>
+        </thead>
+        {% for item in sch_data %}
+        <tr>
+            <td align="center">{{item.name}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <table width="55%" border="1" align="center">
+        <thead bgcolor="yellow">
+            <th colspan="2">公車站牌</th>
+        </thead>
+        {% for item in bus_data %}
+        <tr>
+            <td align="center">{{item.line}}</td>
+            <td align="center">{{item.name}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <table width="55%" border="1" align="center">
+        <thead bgcolor="yellow">
+            <th>醫療院所</th>
+        </thead>
+        {% for item in medical_data %}
+        <tr>
+            <td align="center">{{item.name}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

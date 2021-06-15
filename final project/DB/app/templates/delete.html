@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>刪除建案</title>
+</head>
+
+<body>
+    <form method="POST" action="{{ url_for('delete') }}">
+        {{ form.hidden_tag() }}
+        <p>{{ form.name.label }} {{ form.name }}</p>
+        <p>{{ form.address.label }} {{ form.address }}</p>
+        <p>{{ form.floor_no.label }} {{ form.floor_no }}</p>
+        <p>{{ form.submit.label }} {{ form.submit }}</p>
+    </form>
+</body>
+
+</html>

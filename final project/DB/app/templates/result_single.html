@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>查詢結果</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+
+        th {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <th>名稱</th>
+            <th>土地區段</th>
+            <th>土地移轉總面積</th>
+            <th>移轉層次</th>
+            <th>總樓層數</th>
+            <th>建物型態</th>
+            <th>建物移轉總面積</th>
+            <th>房</th>
+            <th>廳</th>
+            <th>衛</th>
+            <th>總價(元)</th>
+            <th>單價(元/平方公尺)</th>
+            <th>車位移轉總面積</th>
+            <th>車位總價</th>
+            <th>陽台面積</th>
+            <th>電梯</th>
+        </thead>
+        {% for item in data %}
+        <tr>
+            <td>{{item.name}}</td>
+            <td>{{item.address}}</td>
+            <td>{{item.land_area}}</td>
+            <td>{{item.floor_no}}</td>
+            <td>{{item.floor_total}}</td>
+            <td>{{item.type}}</td>
+            <td>{{item.total_area}}</td>
+            <td>{{item.room}}</td>
+            <td>{{item.parlor}}</td>
+            <td>{{item.bath}}</td>
+            <td>{{item.total_price}}</td>
+            <td>{{item.price_per}}</td>
+            <td>{{item.parking_space_area}}</td>
+            <td>{{item.parking_space_price}}</td>
+            <td>{{item.balcony_area}}</td>
+            <td>{{item.elevator}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+
+</body>
+
+</html>

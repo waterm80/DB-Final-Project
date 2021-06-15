@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>評分</title>
+</head>
+
+<body>
+    <form method="POST" action="{{ url_for('rate') }}">
+        {{ form.hidden_tag() }}
+        <p>{{ form.name.label }} {{ form.name }}</p>
+        <p>{{ form.submit.label }} {{ form.submit }}</p>
+    </form>
+</body>
+
+</html>

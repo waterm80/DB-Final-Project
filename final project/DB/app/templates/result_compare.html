@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>查詢結果</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+
+        th {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th>名稱</th>
+            <th>土地區段</th>
+            <th>土地移轉總面積</th>
+            <th>移轉層次</th>
+            <th>總樓層數</th>
+            <th>建物型態</th>
+            <th>建物移轉總面積</th>
+            <th>房</th>
+            <th>廳</th>
+            <th>衛</th>
+            <th>總價(元)</th>
+            <th>單價(元/平方公尺)</th>
+            <th>車位移轉總面積</th>
+            <th>車位總價</th>
+            <th>陽台面積</th>
+            <th>電梯</th>
+        </thead>
+        <tr>
+            <td>{{data1.name}}</td>
+            <td>{{data1.address}}</td>
+            <td>{{data1.land_area}}</td>
+            <td>{{data1.floor_no}}</td>
+            <td>{{data1.floor_total}}</td>
+            <td>{{data1.type}}</td>
+            <td>{{data1.total_area}}</td>
+            <td>{{data1.room}}</td>
+            <td>{{data1.parlor}}</td>
+            <td>{{data1.bath}}</td>
+            <td>{{data1.total_price}}</td>
+            <td>{{data1.price_per}}</td>
+            <td>{{data1.parking_space_area}}</td>
+            <td>{{data1.parking_space_price}}</td>
+            <td>{{data1.balcony_area}}</td>
+            <td>{{data1.elevator}}</td>
+        </tr>
+        <tr>
+            <td>{{data2.name}}</td>
+            <td>{{data2.address}}</td>
+            <td>{{data2.land_area}}</td>
+            <td>{{data2.floor_no}}</td>
+            <td>{{data2.floor_total}}</td>
+            <td>{{data2.type}}</td>
+            <td>{{data2.total_area}}</td>
+            <td>{{data2.room}}</td>
+            <td>{{data2.parlor}}</td>
+            <td>{{data2.bath}}</td>
+            <td>{{data2.total_price}}</td>
+            <td>{{data2.price_per}}</td>
+            <td>{{data2.parking_space_area}}</td>
+            <td>{{data2.parking_space_price}}</td>
+            <td>{{data2.balcony_area}}</td>
+            <td>{{data2.elevator}}</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>查詢結果</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+
+        th {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th bgcolor="yellow">建案名稱</th>
+            <th bgcolor="yellow">區段</th>
+            <th bgcolor="yellow">樓層</th>
+            <th bgcolor="yellow">價格(元/平方公尺)</th>
+        </thead>
+        {% for item in data %}
+        <tr>
+            <td align="center">{{item.name}}</td>
+            <td align="center">{{item.address}}</td>
+            <td align="center">{{item.floor_no}}</td>
+            <td align="center">{{item.price_per}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

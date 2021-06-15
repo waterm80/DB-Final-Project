@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>查詢結果</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+
+        th {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th>名稱</th>
+            <th>評分(平均:150)</th>
+            <th>該建案平均價格(元/平方公尺)</th>
+            <th>CP值(平均:2.45)</th>
+
+        </thead>
+        <tr>
+            <td>{{name}}</td>
+            <td>{{sum}}</td>
+            <td>{{price}}</td>
+            <td>{{CP}}</td>
+        </tr>
+    </table>
+</body>
+
+</html>
